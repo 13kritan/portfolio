@@ -12,6 +12,10 @@ app.use(bodyParser.urlencoded({limit: '20mb', extended: true, parameterLimit: 10
 app.use(cors())
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+})
+
 app.use("/api", userRoutes)
 
 const server = app.listen(process.env.PORT, () => {
