@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 
 module.exports.sendEmail = async (req, res) => {
     const { firstname, lastname, email, subject, message } = req.body
-    console.log(firstname, lastname)
+    console.log(firstname, lastname + "log")
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
