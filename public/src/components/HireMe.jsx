@@ -94,7 +94,7 @@ export default function HireMe({ handleHireClick }) {
                                 <a target="_blank"
                                     download
                                     rel="noreferer"
-                                    href="/Kritan_Resume.png"
+                                    href="/Resume_Kritan.pdf"
                                     className="px-6 py-3 rounded-xl border border-zinc-700
               hover:border-red-500 transition font-medium"
                                 >
