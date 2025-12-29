@@ -1,3 +1,3 @@
-export const host = "https://portfolio-server-kritan.up.railway.app"
+export const host = "https://portfolio-server-tqnf.onrender.com"
 
 export const sendEmailRoute = `${host}/api/sendEmail`
