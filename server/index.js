@@ -7,9 +7,6 @@ const userRoutes = require('./components/userRoute')
 const app = express()
 const PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.json({limit: '20mb'}));
-app.use(bodyParser.urlencoded({limit: '20mb', extended: true, parameterLimit: 10000}));
-
 app.use(cors({
   origin: "https://portfolio-kritan.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
@@ -17,6 +14,8 @@ app.use(cors({
 }))
 
 app.use(express.json())
+app.use(bodyParser.json({limit: '20mb'}));
+app.use(bodyParser.urlencoded({limit: '20mb', extended: true, parameterLimit: 10000}));
 
 app.get("/", (req, res) => {
   res.send("Backend is running!");
