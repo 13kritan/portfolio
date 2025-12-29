@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@layer base {
+  .montseraf {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .spartan {
+    font-family: "League Spartan", sans-serif;
+  }
+
+  .fancyBorder {
+    border-radius: 81% 19% 77% 23% / 54% 73% 27% 46%;
+    width: 400px;
+    height: 400px;
+    background: #453f42;
+    background: -webkit-linear-gradient(to right,
+        #000000,
+        #4d4a4c);
+    background: linear-gradient(to right,
+        #000000,
+        #4d4a4c);
+  }
+
+  .fancyBorderRadius {
+    border-radius: 93% 7% 0% 100% / 100% 38% 62% 0%;
+    width: 400px;
+    height: 400px;
+    background: #373737;
+    background: -webkit-linear-gradient(to right,
+        #3b3b3b,
+        #262626);
+    background: linear-gradient(to right,
+        #1f1e1e,
+        #252525);
+  }
+
+  @media (max-width: 800px) {
+    .fancyBorderRadius {
+      height: 300px;
+    }
+  }
+
+  .imgDrop {
+    width: 150px;
+    -webkit-filter: drop-shadow(5px 5px 5px #111111);
+    filter: drop-shadow(15px 15px 15px #C30927);
+  }
+}
+
+.potraitDrop {
+  /* width: 150px; */
+  -webkit-filter: drop-shadow(5px 5px 5px #da6868);
+  filter: drop-shadow(35px 35px 35px #000000);
+}
+
+.hamburger {
+  @apply flex flex-col items-center justify-center
+}
+
+.elementActive {
+  @apply text-reddish-color
+}
