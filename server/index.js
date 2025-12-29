@@ -5,6 +5,7 @@ const cors = require("cors")
 const userRoutes = require('./components/userRoute')
 
 const app = express()
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json({limit: '20mb'}));
 app.use(bodyParser.urlencoded({limit: '20mb', extended: true, parameterLimit: 10000}));
@@ -23,6 +24,6 @@ app.get("/", (req, res) => {
 
 app.use("/api", userRoutes)
 
-const server = app.listen(process.env.PORT, () => {
-    console.log(`Server started on port ${process.env.PORT}`)
+const server = app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`)
 })
