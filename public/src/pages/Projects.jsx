@@ -13,7 +13,7 @@ export default function Projects() {
       description:
         "A simple and intuitive income and expense management app that helps users track their finances, manage budgets, and gain better control over their spending habits.",
       tech: ["React", "Node.js", "Express", "MongoDB", "Socket.IO"],
-      live: "https://sajilobudget-frontend.onrender.com/",
+      live: "https://sajilo-budget.vercel.app/",
       github: "https://github.com/13kritan/SajiloBudget",
       img: Expn
     },
@@ -30,7 +30,7 @@ export default function Projects() {
       description:
         "A user-friendly recipe application that allows users to discover, search, and save recipes, making everyday cooking easier and more enjoyable.",
       tech: ["React", "Tailwind", "Node.js", "Chart.js"],
-      live: "https://cookle-har5.onrender.com/",
+      live: "https://cookle-f.vercel.app/",
       github: "https://github.com/13kritan/cookle-f",
       img: Cook 
     },
