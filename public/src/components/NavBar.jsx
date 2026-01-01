@@ -50,7 +50,7 @@ export default function NavBar({ isHire, handleHireClick }) {
               </div>
 
               <div className="items w-full flex flex-col gap-3 items-center list-none text-xl text-white px-3 bg-transparent shadow-sm ">
-                <div className={` ${isHire ? '' : ''}`} onClick={() => setMenuOpen(false)}>
+                <div className={` ${isHire ? 'hidden' : ''}`} onClick={() => setMenuOpen(false)}>
                   <ButtonDisplay handleSubmit={handleHireClick} buttonName={!isHire ? "Hire Me" : "Home"} />
                 </div>
                 {
