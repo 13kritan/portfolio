@@ -50,9 +50,9 @@ export default function NavBar({ isHire, handleHireClick }) {
               </div>
 
               <div className="items w-full flex flex-col gap-3 items-center list-none text-xl text-white px-3 bg-transparent shadow-sm ">
-                <div className={`vsm:block md:block hidden ${isHire ? '' : ''}`}>
+                <button onClick={() => setMenuOpen(false)} className={`vsm:block md:block hidden ${isHire ? '' : ''}`}>
           <ButtonDisplay handleSubmit={handleHireClick} buttonName={!isHire ? "Hire Me" : "Home"} />
-        </div>
+        </button>
                 {
                   navItems.map((item, index) => {
                     return <Link className='cursor-pointer bg-black/60 backdrop-saturate-350 w-full px-2 py-2 border-2 border-reddish-color text-center font-semibold tracking-wider rounded-md' to={item.toLowerCase()} spy={true} smooth='easeOutQuad' duration={1000} onClick={() => setMenuOpen(false)} key={index}>
@@ -65,7 +65,7 @@ export default function NavBar({ isHire, handleHireClick }) {
             :
             !isHire ?
               <div className='hidden md:block vsm:block cursor-pointer text-lg px-2 py-1' onClick={handleMenuClick} ><FontAwesomeIcon icon={faMenorah} /></div> :
-              <div className={`${isHire ? 'hidden  md:block vsm:block' : ''}`}>
+              <div onClick={() => setMenuOpen(false)} className={`${isHire ? 'hidden  md:block vsm:block' : ''}`}>
                 <ButtonDisplay handleSubmit={handleHireClick} buttonName={!isHire ? "Hire Me" : "Home"} /> 
               </div>
 
