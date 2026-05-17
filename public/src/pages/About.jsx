@@ -68,6 +68,7 @@ md:pt-20
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
                          href={handle.href}
+                         target="_blank"
                   className='border-2 border-zinc-400 rounded-md
                   vsm:text-sm
                   md:text-lg
