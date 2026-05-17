@@ -16,7 +16,7 @@ export default function About() {
     {
       className: 'text-blue-500',
       icon: faLinkedin,
-      href: "www.linkedin.com/in/kritan-adhikari-4b16873a3"
+      href: "https://www.linkedin.com/in/kritan-adhikari-4b16873a3"
     }
   ]
   return (
