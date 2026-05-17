@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ButtonDisplay from "./ButtonDisplay";
 import Form from "./Form";
 
 export default function HireMe({ handleHireClick }) {
