@@ -63,7 +63,7 @@ export default function NavBar({ isHire, handleHireClick }) {
             :
             !isHire ?
               <div className='hidden md:block vsm:block cursor-pointer text-lg px-2 py-1' onClick={handleMenuClick} ><FontAwesomeIcon icon={faMenorah} /></div> :
-              <div className={`${isHire ? 'hidden' : ''}`}>
+              <div className={`${isHire ? 'hidden  md:block vsm:block' : ''}`}>
                 <ButtonDisplay handleSubmit={handleHireClick} buttonName={!isHire ? "Hire Me" : "Home"} /> 
               </div>
 
