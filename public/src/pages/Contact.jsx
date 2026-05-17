@@ -16,7 +16,7 @@ export default function Contact() {
     {
       icon: faPhone,
       header: 'Phone',
-      info: '+977 9708124060'
+      info: '+977 9748426258'
     },
     {
       icon: faLocation,
