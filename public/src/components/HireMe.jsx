@@ -81,7 +81,7 @@ export default function HireMe({ handleHireClick }) {
                                 </button>
 
                                 <a
-                                    href="https://www.linkedin.com/"
+                                    href="https://www.linkedin.com/in/kritan-adhikari-4b16873a3"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="px-6 py-3 rounded-xl border border-zinc-700
