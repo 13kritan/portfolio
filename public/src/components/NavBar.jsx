@@ -50,9 +50,7 @@ export default function NavBar({ isHire, handleHireClick }) {
               </div>
 
               <div className="items w-full flex flex-col gap-3 items-center list-none text-xl text-white px-3 bg-transparent shadow-sm ">
-                <div className={` ${isHire ? 'hidden' : ''}`} onClick={() => setMenuOpen(false)}>
-                  <ButtonDisplay handleSubmit={handleHireClick} buttonName={!isHire ? "Hire Me" : "Home"} />
-                </div>
+                
                 {
                   navItems.map((item, index) => {
                     return <Link className='cursor-pointer bg-black/60 backdrop-saturate-350 w-full px-2 py-2 border-2 border-reddish-color text-center font-semibold tracking-wider rounded-md' to={item.toLowerCase()} spy={true} smooth='easeOutQuad' duration={1000} onClick={() => setMenuOpen(false)} key={index}>
