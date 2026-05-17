@@ -1,5 +1,5 @@
 import React from 'react'
-import { easeIn, easeInOut, easeOut, motion, stagger } from 'framer-motion'
+import { easeIn, easeOut, motion, stagger } from 'framer-motion'
 import { charVariant } from '../utils/motionVariants'
 import potrait from '../assets/done.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
