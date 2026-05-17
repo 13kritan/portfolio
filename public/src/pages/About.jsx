@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import Potrait from '../assets/sit.png'
@@ -8,17 +8,15 @@ import { fadeIn } from '../utils/motionVariants'
 export default function About() {
 
   const handles = [
-    {
-      className: 'text-lb-color',
-      icon: faFacebook
-    },
-    {
-      className: 'text-pink-500',
-      icon: faInstagram
-    },
-    {
+   {
       className: 'text-white',
-      icon: faLinkedin
+      icon: faGithub,
+      href: "https://github.com/13kritan/"
+    },
+    {
+      className: 'text-blue-500',
+      icon: faLinkedin,
+      href: "www.linkedin.com/in/kritan-adhikari-4b16873a3"
     }
   ]
   return (
@@ -64,17 +62,18 @@ md:pt-20
           <div className="handles flex text-2xl gap-5">
             {
               handles.map((handle, index) => {
-                return <motion.div
+                return <motion.a
                   variants={fadeIn("left", index * .1)}
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
+                         href={handle.href}
                   className='border-2 border-zinc-400 rounded-md
                   vsm:text-sm
                   md:text-lg
                   py-1 px-2'>
                   <FontAwesomeIcon key={index} className={handle.className} icon={handle.icon} />
-                </motion.div>
+                </motion.a>
               })
             }
           </div>
